@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: hsl(222, 26%, 31%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.topo{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.theme{
+    width: 180px;
+    height: 85px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.numbers{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.slider{
+    width: 100px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slidingArea{
+    display: flex;
+    width: 70px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: rgb(134, 134, 134);
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+    border-radius: 100%;
+    border: px;
+    border-color: rgb(86, 0, 167);
+}
+.input{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 350px;
+    height: 100px;
+    background-color: rgb(35, 44, 67);
+    font-size: 4rem;
+    border-radius: 10px;
+    color: white;
+    text-align: right;
+}
+.buttons{
+    width: 390px;
+    height: 490px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    background-color: rgb(35, 44, 67);
+    border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    border: 5px;
+    border-color: rgb(196, 194, 194);
+    border-bottom-style: outset;
+    font-size: larger;
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(35, 44, 67);
+}
+button:hover{
+    background-color: rgb(105, 105, 105);
+    border-color: rgb(196, 194, 194);
+}
+.RorE{
+    width: 173px;
+}
+.calc{
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.equals{
+    background-color: rgb(208, 63, 47);
+    border-color: brown;
+    color: white;
+}
+.del{
+    background-color: rgb(151, 151, 255);
+    color: white;
+}
+.reset{
+    background-color: rgb(151, 151, 255);
+    color: white;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+.linha1,.linha2,.linha3,.linha4,.linha5{
+    width: 390px;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (min-width: 600px) {
+    .buttons{
+        width: 600px;
+    }
+    .linha1,.linha2,.linha3,.linha4,.linha5{
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    }
+    button{
+        width: 110px;
+    }
+    .RorE{
+        width: 250px;
+    }
+    input{
+        width: 600px;
+    }
+    .topo{
+        width: 600px;
+    }
+    .theme{
+        width: 400px;
+    }
+}
